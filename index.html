@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GugaDoce</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Faça seu Pedido!</h1>
+        <form id="pedidoForm">
+            <label for="nome">Seu Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="pedido">Tipo de Pedido:</label>
+            <div>
+                <label><input type="checkbox" name="pedido" value="bolo_de_chocolate"> Bolo de Chocolate</label>
+                <input type="number" name="quantidade_bolo_de_chocolate" min="1" placeholder="Quantidade" class="quantidade">
+            </div>
+            <div>
+                <label><input type="checkbox" name="pedido" value="bolo_de_ninho"> Bolo de Ninho</label>
+                <input type="number" name="quantidade_bolo_de_ninho" min="1" placeholder="Quantidade" class="quantidade">
+            </div>
+            <div>
+                <label><input type="checkbox" name="pedido" value="dindin_morango_nutella"> Dindin Morango c/ Nutella</label>
+                <input type="number" name="quantidade_dindin_morango_nutella" min="1" placeholder="Quantidade" class="quantidade">
+            </div>
+            <div>
+                <label><input type="checkbox" name="pedido" value="dindin_ninho_nutella"> Dindin Ninho c/ Nutella</label>
+                <input type="number" name="quantidade_dindin_ninho_nutella" min="1" placeholder="Quantidade" class="quantidade">
+            </div>
+            <div>
+                <label><input type="checkbox" name="pedido" value="dindin_maracuja_trufado"> Dindin Maracujá Trufado</label>
+                <input type="number" name="quantidade_dindin_maracuja_trufado" min="1" placeholder="Quantidade" class="quantidade">
+            </div>
+            <div>
+                <label><input type="checkbox" name="pedido" value="dindin_batom_garoto"> Dindin Batom Garoto</label>
+                <input type="number" name="quantidade_dindin_batom_garoto" min="1" placeholder="Quantidade" class="quantidade">
+            </div>
+            <div>
+                <label><input type="checkbox" name="pedido" value="dindin_sensacao"> Dindin Sensação</label>
+                <input type="number" name="quantidade_dindin_sensacao" min="1" placeholder="Quantidade" class="quantidade">
+            </div>
+            <div>
+                <label><input type="checkbox" name="pedido" value="dindin_prestigio"> Dindin Prestígio</label>
+                <input type="number" name="quantidade_dindin_prestigio" min="1" placeholder="Quantidade" class="quantidade">
+            </div>
+            <div>
+                <label><input type="checkbox" name="pedido" value="dindin_ninho"> Dindin Ninho</label>
+                <input type="number" name="quantidade_dindin_ninho" min="1" placeholder="Quantidade" class="quantidade">
+            </div>
+            <div>
+                <label><input type="checkbox" name="pedido" value="dindin_coco"> Dindin Coco</label>
+                <input type="number" name="quantidade_dindin_coco" min="1" placeholder="Quantidade" class="quantidade">
+            </div>
+            <div>
+                <label><input type="checkbox" name="pedido" value="dindin_pudim"> Dindin Pudim</label>
+                <input type="number" name="quantidade_dindin_pudim" min="1" placeholder="Quantidade" class="quantidade">
+            </div>
+
+            <label for="observacao">Observações (opcional):</label>
+            <textarea id="observacao" name="observacao"></textarea>
+
+            <button type="submit">Enviar Pedido</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
